@@ -47,6 +47,10 @@ export const App = () => {
               return (
                 <tr data-cy="Good" key={good}>
                   <td>
+                    {/* should have an AddButton for each not selected goods:
+                    AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy="AddButton"]`, but never found it.
+                    at Context.eval (webpack://react_goods-selector-js/.
+                    /cypress/integration/page.spec.js:81:9) */}
                     <button
                       data-cy="AddButton"
                       type="button"
